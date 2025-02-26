@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Figueroa</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        fetch('/Week_3_portfolio_JF/html-project-JuanFig023/components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <script>
+        fetch('/Week_3_portfolio_JF/html-project-JuanFig023/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main>
+        <div class = "headers">
+            <h1>Hello, I'm Juan.</h1>
+            <h2>I'm a  Software Application Development Apprentice.</h2>
+        </div>
+        <img src="./images/headshot.jpg" alt="Juan Figueroa">
+    </main>
+    <div id="footer"></div>
+</body>
+</html>

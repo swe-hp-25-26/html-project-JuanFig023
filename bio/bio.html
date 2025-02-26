@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Figueroa Biography</title>
+    <link rel="stylesheet" href="/Week_3_portfolio_JF/html-project-JuanFig023/bio/bio.css">
+    <script>
+        fetch('/Week_3_portfolio_JF/html-project-JuanFig023/components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <script>
+        fetch('/Week_3_portfolio_JF/html-project-JuanFig023/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <section class="biography">
+        <h1>About Me</h1>
+        <p class="description-jf">
+            I'm currently training as a Software Application Development Apprentice through HP's technical bootcamp in Houston, TX. My background is in data analytics, but my passion for coding led me to make the switch to software development. I'll be gaining hands-on experience in building and testing software while constantly learning and growing.
+        </p>
+        <p class="description-jf">
+            Outside of work, I love exploring new places, trying different cuisines, staying active, and hanging out with my dog, Milo. I'm always up for a challenge and enjoy working on projects that push my skills and keep me learning.
+        </p>
+        <img src="/Week_3_portfolio_JF/html-project-JuanFig023/images/About.jpg" alt="Juan Figueroa">
+    </section>
+    <div id="footer"></div>
+</body>
+</html>

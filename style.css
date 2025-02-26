@@ -1,0 +1,38 @@
+body {
+    font-family: 'Monaco', Monospace;
+    background-color: white;
+    color: rgb(0, 119, 181);
+    margin: 0px;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    background-color: #e0f7fa;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+main h1, main h2 {
+    text-align: center;
+    margin: 10px 20px 0 0;
+}
+
+main h1{
+    font-size: 35px;
+}
+
+main h2{
+    font-size: 25px;
+}
+
+main img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 45%;
+}
