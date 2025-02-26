@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Figueroa Experience</title>
+    <link rel="stylesheet" href="/Week_3_portfolio_JF/html-project-JuanFig023/exp/exp.css">
+    <script>
+        fetch('/Week_3_portfolio_JF/html-project-JuanFig023/components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <script>
+        fetch('/Week_3_portfolio_JF/html-project-JuanFig023/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+        <section class="all-experiences">
+            <h1>Experience</h1>
+            <article class="listed-experience">
+                <h2>Software Application Development Apprentice - HP</h2>
+                <p class="date">Present</p>
+                <p class="description"></p>
+            </article>
+            <article class="listed-experience">
+                <h2>Data Analyst Intern - USDA</h2>
+                <p class="date">Aug 2023 - Jan 2025</p>
+                <ul class="description">
+                    <li>Utilized Sharepoint & Power BI for robust data management and analysis, significantly improving data accuracy and handling
+                        processes by 50%.</li>
+                    <li>Automated mass email campaigns resulting in a reduction of time from a daily one hour task to the time it takes to refresh a page.</li>
+                </ul>
+            </article>
+            <article class="listed-experience">
+                <h2>Assistant Manager - Central Internacional De Carga</h2>
+                <p class="date">Aug 2020 - July 2023</p>
+                <ul class="description">
+                    <li>Quoted prices for potential customers and implemented persuasion skills to average a monthly closing rate of 80%</li>
+                    <li>Coordinated international cargo shipments from the US to Colombia, managing logistics to ensure timely and secure delivery of goods.</li>
+                </ul>
+            </article>
+        </section>
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Figueroa Portfolio</title>
+    <link rel="stylesheet" href="/Week_3_portfolio_JF/html-project-JuanFig023/port/port.css">
+    <script>
+        fetch('/Week_3_portfolio_JF/html-project-JuanFig023/components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <script>
+        fetch('/Week_3_portfolio_JF/html-project-JuanFig023/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+        <section class="projects">
+            <h1>Projects</h1>
+            <article class="listed-project">
+                <h2>Rock, Paper, Scissors</h2>
+                <p>
+                    This project is a simulation of the classic game of rock, paper, scissors. It showcases my ability to use variables, conditionals, and functions to create an interactive program. The game randomly selects rock, paper, or scissors for each player and determines the winner based on the traditional rules.
+                </p>
+                <img src="/Week_3_portfolio_JF/html-project-JuanFig023/images/rock.png" alt="Rock, Paper, Scissors Project">
+            </article>
+            <article class="listed-project">
+                <h2>Cash Register Project</h2>
+                <p>
+                    This project involves designing and building a cash register simulation. The program is capable of adding and removing items, counting the amount of coins and bills in the drawer, summing the total amount of money in the drawer, determining if a specific cash amount can be created from the current items in the drawer, and computing the change required from a transaction and removing it from the drawer if possible.
+                </p>
+                <img src="/Week_3_portfolio_JF/html-project-JuanFig023/images/cash.png" alt="Cash Register Project">
+            </article>
+        </section>
+    <div id="footer"></div>
+</body>
+</html>
